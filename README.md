@@ -14,7 +14,7 @@ The files included are:
 - Batch scripts (aws cli)
 - Diagram
 
-Load Balancer URL: 	http://Udagr-WebAp-1X9U3VHFQ7E9Q-525102678.us-east-1.elb.amazonaws.com
+Load Balancer URL: 	http://Udagr-WebAp-1LBCWGB62K7NT-750143598.us-east-1.elb.amazonaws.com
 
 
 
