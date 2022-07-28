@@ -11,7 +11,7 @@ The files included are:
 
 - Application: a static website
 - Cloudformation scripts: yaml scripts for network and server infrastructure
-- Batch scrips (aws cli)
+- Batch scripts (aws cli)
 - Diagram
 
 Load Balancer URL:
