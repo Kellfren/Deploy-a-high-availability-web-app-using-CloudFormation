@@ -1,0 +1,30 @@
+[
+	{
+		"ParameterKey": "EnvironmentName",
+		"ParameterValue": "UdacityProject"
+	},
+	{
+		"ParameterKey": "StudentName",
+		"ParameterValue": "Francesco Calzona"
+	},
+	{
+		"ParameterKey": "AmiIDWebServer",
+		"ParameterValue": "ami-0729e439b6769d6ab"
+	},
+	{
+		"ParameterKey": "AmiIDBastion",
+		"ParameterValue": "ami-0cff7528ff583bf9a"
+	},
+	{
+		"ParameterKey": "WebServerKey",
+		"ParameterValue": "webserver"
+	},
+	{
+		"ParameterKey": "BastionKey1",
+		"ParameterValue": "bastion1"
+	},
+	{
+		"ParameterKey": "BastionKey2",
+		"ParameterValue": "bastion2"
+	}
+]
