@@ -20,18 +20,6 @@ Parameters:
         Description: AmiID for Bastion Host
         Type: String
     
-    WebServerKey: 
-        Description: webserver key pair name 
-        Type: String
-    
-    BastionKey1: 
-        Description: bastion key pair name in the public subnet 1 
-        Type: String
-    
-    BastionKey2:
-        Description: bastion key pair name in the public subnet 2
-        Type: String
-
 Resources:
 
   # Security Group for Load Balancer
@@ -51,10 +39,6 @@ Resources:
       - IpProtocol: tcp
         FromPort: 80
         ToPort: 80
-        CidrIp: 0.0.0.0/0
-      - IpProtocol: tcp
-        FromPort: 8080
-        ToPort: 8080
         CidrIp: 0.0.0.0/0
       Tags:
         - Key: Name
@@ -129,7 +113,6 @@ Resources:
           aws s3 cp s3://francescoc-bucket/udacity.zip ./
           unzip -o udacity.zip
       ImageId: !Ref AmiIDWebServer
-      KeyName: !Ref WebServerKey
       SecurityGroups:
       - Ref: WebServerSecGroup
       InstanceType: t3.medium
@@ -248,7 +231,6 @@ Resources:
     Properties: 
       ImageId: !Ref AmiIDBastion
       InstanceType: t2.micro
-      KeyName: !Ref BastionKey1
       NetworkInterfaces: 
         - AssociatePublicIpAddress: "true"
           DeviceIndex: "0"
@@ -262,7 +244,6 @@ Resources:
     Properties: 
       ImageId: !Ref AmiIDBastion
       InstanceType: t2.micro
-      KeyName: !Ref BastionKey1
       NetworkInterfaces: 
         - AssociatePublicIpAddress: "true"
           DeviceIndex: "0"

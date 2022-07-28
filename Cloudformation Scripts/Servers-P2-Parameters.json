@@ -14,17 +14,5 @@
 	{
 		"ParameterKey": "AmiIDBastion",
 		"ParameterValue": "ami-0cff7528ff583bf9a"
-	},
-	{
-		"ParameterKey": "WebServerKey",
-		"ParameterValue": "webserver"
-	},
-	{
-		"ParameterKey": "BastionKey1",
-		"ParameterValue": "bastion1"
-	},
-	{
-		"ParameterKey": "BastionKey2",
-		"ParameterValue": "bastion2"
 	}
 ]
